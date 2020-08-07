@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <table class="table table-bordered">
+        <thead class="bg-dark text-light">
+          <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Price</th>
+            <th>Quantity</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let d of localData">
+              <td>{{ d.id }}</td>
+              <td>{{ d.title }}</td>
+              <td>{{ d.price }}</td>
+              <td>{{ d.quantity }}</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
