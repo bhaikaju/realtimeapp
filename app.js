@@ -97,7 +97,7 @@ const program = async () => {
                         .getAll()
                         .then(prods => {
                             data = prods;
-                            io.sockets.emit('initial', {prods: [...data]});
+                            io.sockets.emit('update', {prods: [...data]});
                         })
                         .catch(err => console.log(err));
                     break;
